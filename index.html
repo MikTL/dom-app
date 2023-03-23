@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM App</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/alarma.css" rel="stylesheet" />
+</head>
+
+<body data-dark>
+  <header>
+    <h1 class="header">¿Que se puede hacer con la manipulacion del DOM?</h1>
+  </header>
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1">Reloj Digital y Alarma Sonora</a>
+      <a href="#seccion2">Eventos del Teclado</a>
+      <a href="#seccion3">CountDown</a>
+      <a href="#seccion4">Responsive con Js</a>
+      <a href="#seccion5">Responsive Tester</a>
+      <a href="#seccion6">Detección de Dispositivos</a>
+      <a href="#seccion7">Detección de la cámara web</a>
+      <a href="#seccion8">Geolocalización</a>
+      <a href="#seccion9">Filtros de busquedas</a>
+      <a href="#seccion10">Sorteo Digital</a>
+      <a href="#seccion11">Responsive Slider</a>
+      <a href="#seccion12">Video Inteligente</a>
+      <a href="#seccion13">Validaciones de formularios</a>
+      <a href="#seccion14">Narrador</a>
+    </nav>
+  </aside>
+  <aside>
+    <a class="flecha" href="#seccion1">
+      <svg width="50px" height="35px" viewBox="0 0 512 350" xmlns="http://www.w3.org/2000/svg">
+        <polygon fill="#000"
+          points="390.624 150.625 256 16 121.376 150.625 144.004 173.252 240.001 77.254 240.001 495.236 272.001 495.236 272.001 77.257 367.996 173.252 390.624 150.625"
+          class="ci-primary" />
+      </svg>
+    </a>
+  </aside>
+  <aside>
+    <button class="dark-mode">🌙</button>
+  </aside>
+  <main>
+    <section id="seccion1" class="section">
+      <h2>Reloj Digital y Alarma Sonora</h2>
+      <div class="watch-container">
+        <div class="extern-watch">
+          <div class="screen-watch">
+            <p class="hour"></p>
+
+            <!--alarmclock-starts-->
+            <div class="ocultar-alarma">
+              <div class="ac-animated-svg-icon ac-svg-animated ac-svg-shadow">
+                <div class="ac-animated-svg-icon-contents">
+                  <div class="ac-animated-svg-alarmclock">
+                    <div class="svg-alarmclock-in">
+                      <img src="https://preview.animatedcreativity.com/svg/alarmclock/alarmclock.svg"
+                        class="svg-alarmclock" />
+                      <img src="https://preview.animatedcreativity.com/svg/alarmclock/leftbell.svg"
+                        class="svg-left-bell" />
+                      <img src="https://preview.animatedcreativity.com/svg/alarmclock/rightbell.svg"
+                        class="svg-right-bell" />
+                      <img src="https://preview.animatedcreativity.com/svg/alarmclock/hour.svg" class="svg-hour" />
+                      <img src="https://preview.animatedcreativity.com/svg/alarmclock/minute.svg" class="svg-minute" />
+                    </div>
+                    <img src="https://preview.animatedcreativity.com/svg/alarmclock/shadow.svg" class="svg-shadow" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--alarmclock-ends-->
+          </div>
+        </div>
+      </div>
+      <audio src="assets/alarma-ibai.mp3" id="alarm"></audio>
+      <button id="start-watch">Iniciar Reloj</button>
+      <button id="stop-watch">Detener Reloj</button>
+      <button id="start-alarm">Iniciar Alarma</button>
+      <button id="stop-alarm">Detener Alarma</button>
+    </section>
+    <section id="seccion2" class="section">
+      <h2>Eventos del teclado</h2>
+      <div class="lienzo">
+        <div class="circulo"></div>
+      </div>
+    </section>
+    <section id="seccion3" class="section">
+      <h2>CountDown</h2>
+      <h4 class="count-down"></h4>
+    </section>
+    <section id="seccion4" class="section">
+      <h2>Responsive con JavaScript</h2>
+      <div id="youtube">
+      </div>
+      <div id="gmaps"></div>
+    </section>
+    <section id="seccion5" class="section">
+      <h2>Responsive tester</h2>
+      <form id="formulario">
+        <input type="text" name="direccion" placeholder="dirección" />
+        <br />
+        <input type="number" name="ancho" placeholder="ancho" required /><br />
+        <input type="number" name="alto" placeholder="alto" required /><br />
+        <input type="submit" value="probar" name="probar" />
+        <input type="button" value="cerrar" name="cerrar" />
+      </form>
+    </section>
+    <section id="seccion6" class="section">
+      <h2>Detección de Dispositivos (user Agent)</h2>
+      <div id="device"></div>
+    </section>
+    <section id="seccion7" class="section">
+      <h2>Detección de la cámara web</h2>
+      <video id="webcam"></video>
+    </section>
+    <section id="seccion8" class="section">
+      <h2>Geolocalización</h2>
+      <div id="geolocation"></div>
+    </section>
+    <section id="seccion9" class="section">
+      <h2>Filtros de Busqueda</h2>
+      <input type="search" placeholder="Buscar..." class="card-filter" />
+
+      <article class="cards">
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+          <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/any" alt="Any" />
+          <figcaption>Any</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+          <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/people" alt="People" />
+          <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/arch" alt="Architecture" />
+          <figcaption>Architecture</figcaption>
+        </figure>
+      </article>
+    </section>
+    <section id="seccion10" class="section">
+      <h2>Sorteo Digital</h2>
+      <ul class="players">
+        <li class="player">JavaScript</li>
+        <li class="player">PHP</li>
+        <li class="player">JAVA</li>
+        <li class="player">C</li>
+        <li class="player">Python</li>
+        <li class="player">Rust</li>
+        <li class="player">Ruby</li>
+        <li class="player">Go</li>
+        <li class="player">Perl</li>
+        <li class="player">C++</li>
+      </ul>
+      <button id="winner-btn">Obtener ganador</button>
+    </section>
+    <section id="seccion11" class="section">
+      <h2>Responsive Slider</h2>
+      <div class="slider">
+        <div class="slider-slides">
+          <div class="slider-slide active">
+            <img src="https://placeimg.com/600/600/nature" alt="Nature" />
+          </div>
+          <div class="slider-slide">
+            <h3>Responsive Slide 2</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+              culpa eius architecto dolor fugiat, illo sint vero nesciunt
+              soluta ipsa quod possimus totam laudantium labore animi maiores
+              sapiente iste id!
+            </p>
+          </div>
+          <div class="slider-slide">
+            <img src="https://placeimg.com/600/600/people" alt="People" />
+          </div>
+          <div class="slider-slide">
+            <h3>Responsive Slide 4</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+              culpa eius architecto dolor fugiat, illo sint vero nesciunt
+              soluta ipsa quod possimus totam laudantium labore animi maiores
+              sapiente iste id!
+            </p>
+          </div>
+          <div class="slider-slide">
+            <img src="https://placeimg.com/600/600/arch" alt="Architecture" />
+          </div>
+        </div>
+        <div class="slider-btns">
+          <a href="" class="prev-btn">&laquo;</a>
+          <a href="" class="next-btn">&raquo;</a>
+        </div>
+      </div>
+    </section>
+    <section id="seccion12" class="section">
+      <h2>Video Inteligente</h2>
+      <video src="./assets/video-meme.mp4" loop data-smart-video></video>
+      <br /><br />
+      <video src="./assets/video-meme.mp4" loop data-smart-video muted></video>
+    </section>
+    <section id="seccion13" class="section">
+      <h2>Validaciones de Formularios</h2>
+      <form target="_blank" class="val-form" action="https://formsubmit.co/maik-ft-tucto@hotmail.com" method="POST">
+        <legend>Envianos tus comentarios</legend>
+        <input type="text" name="name" placeholder="Escriba su nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required
+          title="nombre solo acepta letras y espacios en blanco">
+        <input type="email" name="email" placeholder="Ingrese su correo Electrónico"
+          pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required title="Email incorrecto">
+        <input type="text" name="topic" placeholder="Tema a tratar" required title="El asunto es requerido">
+        <textarea name="commentary" placeholder="Comentario" data-pattern="^.{1,255}$" required
+          title="Tu comentario no debe de exceder los 255 caracteres"></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+      <div class="contact-form-loader none">
+        <img src="./assets/oval.svg" alt="loader">
+      </div>
+      <div class="contant-form-response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+    </section>
+    
+    <section id="seccion14" class="section">
+      <h2>Narrador</h2>
+      <select id="speech-select">
+        <option value="">---Elige una Voz---</option>
+      </select>
+      <br><br>
+      <textarea name="" id="speech-text" cols="50" rows="5" placeholder="Ingresa texto para leerlo"></textarea>
+      <br>
+      <button id="speech-btn">Leer Texto</button>
+    </section>
+  </main>
+  <button class="hamburger hamburger--spin" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <p id="resultado"></p>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
