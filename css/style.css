@@ -2,7 +2,7 @@
   --main-font: sans-serif;
   --font-size: 16px;
   --main-color: #f7df1e;
-  --second-color: #222;
+  --second-color: #202b38;
   --main-modal-color: rgba(247, 222, 30, 0.85);
   --second-modal-color: rgba(34, 34, 34, 0.85);
   --container-width: 1200px;
@@ -252,7 +252,7 @@ h1 {
 
 /* Eventos del teclado */
 .lienzo {
-  background-color: var(--second-color);
+  background-color: grey;
   height: 300px;
 }
 .circulo {
@@ -484,8 +484,8 @@ form {
     width: 100%;
   }
   .menu a {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
   .menu .scroll-focus {
     font-weight: bold;
