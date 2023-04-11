@@ -10,4 +10,4 @@ Este es un README para una web con Javascript, donde se pueden ver algunos ejemp
 - Geolocalización.
 - Otros.
 
-Para ver la web haz click [aqui](https://www.youtube.com/watch?v=tgTUtfb0Ok8) y que esta web sea de utilidad para aprender más sobre Javascript y el DOM.
+Para ver la web haz click [aqui](https://dom-app.vercel.app/) y que esta web sea de utilidad para aprender más sobre Javascript y el DOM.
