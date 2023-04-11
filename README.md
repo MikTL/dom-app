@@ -1,5 +1,5 @@
 # Ejercicios JS manipulando el DOM
-Este es un README para una web con Javascript, donde se pueden ver algunos ejemplos de lo que se puede hacer con este lenguaje usando la manipulación del DOM. Los ejercicios que se muestran son:
+Aquí se pueden ver algunos ejemplos de lo que se puede hacer con Javascript css y html usando la manipulación del DOM. Los ejercicios que se muestran son:
 
 - Un Reloj con tiempo real + Alarma, con encendido y apagado.
 - Mover un elemento HTML con el teclado.
@@ -8,7 +8,11 @@ Este es un README para una web con Javascript, donde se pueden ver algunos ejemp
 - Detección del dispositivo y navegador.
 - Detección y uso de la cámara web.
 - Geolocalización.
+- Filtros de busqueda de elementos ya renderizados.
 - Modo claro y oscuro con persistencia (cuando abres la pagina otra vez, estará como lo dejaste).
-- Otros.
+- Slider responsivos con Javascript.
+- Video Inteligente (si el video se muestra en un 80% en tu pantalla, se reproduce automaticamente, de lo contrario de detiene).
+- Validaciones de formularios.
+- Texto a voz (Narrador)
 
-Para ver la web haz click [aqui](https://dom-app.vercel.app/) y que esta web sea de utilidad para aprender más sobre Javascript y el DOM.
+Para ver la web haz click [aqui](https://dom-app.vercel.app/).
