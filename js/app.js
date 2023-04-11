@@ -21,7 +21,7 @@ const d = document
 
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".hamburger", ".panel", ".menu a")
-  reloj(".hour")
+  reloj(".hour","#start-alarm", "#stop-alarm")
   alarma("#start-alarm", "#stop-alarm", "#alarm", ".ocultar-alarma")
   countDown(".count-down", "2023,12,5 13:40:00", "Holaaa Tiempo")
   scrollBoton(".flecha")
