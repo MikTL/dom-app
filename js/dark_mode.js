@@ -31,7 +31,7 @@ export default function darkMode(btn, dark) {
   d.addEventListener("DOMContentLoaded", () => {
     //console.log(ls.getItem("theme"))
     //al cargar la pagina, este evento preguntará si existe el elemento theme con cierto valor en el storage, si existe, carga dicha configuración, es por eso que aplica el modo oscuro aun despues de recargar la página
-    if (ls.getItem("theme") === null) ls.setItem("theme", "light")
+    if (ls.getItem("theme") === null) ls.setItem("theme", "dark")
     if (ls.getItem("theme") === "light") light()
     if (ls.getItem("theme") === "dark") darK()
   })
