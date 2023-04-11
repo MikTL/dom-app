@@ -8,6 +8,7 @@ Este es un README para una web con Javascript, donde se pueden ver algunos ejemp
 - Detección del dispositivo y navegador.
 - Detección y uso de la cámara web.
 - Geolocalización.
+- Modo claro y oscuro con persistencia (cuando abres la pagina otra vez, estará como lo dejaste).
 - Otros.
 
 Para ver la web haz click [aqui](https://dom-app.vercel.app/) y que esta web sea de utilidad para aprender más sobre Javascript y el DOM.
